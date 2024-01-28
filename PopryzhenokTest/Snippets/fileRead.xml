@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>FileRead</Title>
+			<Shortcut>fr</Shortcut>
+			<Description>Прочтения всех файлов по директории</Description>
+			<Author>NVA</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>NameDirectory</ID>
+					<Default>string</Default>
+					<ToolTip>Названия директории</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[
+				string path = Directory.GetCurrentDirectory();
+                foreach (string fileName in Directory.GetFiles(Path.Combine(path, "$NameDirectory$")))
+                {
+                    var picture = new PictureBox();
+                    var fileByte = File.ReadAllBytes(fileName);
+                    picture.Image = System.Drawing.Image.FromStream(new MemoryStream(fileByte));
+                    picture.Size = new Size(200,150);
+                    picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    picture.Parent = flowLayoutPanel;
+                }
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
