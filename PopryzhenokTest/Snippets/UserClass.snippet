@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>UserClass</Title>
+			<Shortcut>uc</Shortcut>
+			<Description>Класс для создания класса пользователя</Description>
+			<Author>NVA</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>String</ID>
+					<Default>string</Default>
+					<ToolTip>Тип</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[
+	public class User
+	{
+
+		///<summary>
+		/// Идентификатор
+		///</summary>
+		public int Id { get; set; }
+		
+		///<summary>
+		/// Фамилия
+		///</summary>
+		public $String$ Surname { get; set; }
+
+		///<summary>
+		/// Имя
+		///</summary>
+		public $String$ Name { get; set; }
+
+		///<summary>
+		/// Отчество
+		///</summary>
+		public $String$ Patronymic { get; set; } = null;
+
+		///<summary>
+		/// Логин
+		///</summary>
+		public $String$ Login { get; set; }
+
+		///<summary>
+		/// Пароль
+		///</summary>
+		public $String$ Password { get; set; }
+
+		///<summary>
+		/// Роль
+		///</summary>
+		public RoleTypes RoleType { get; set; }
+	}
+				
+	public enum RoleTypes
+	{
+
+		///<summary>
+		/// Клиент
+		///</summary>
+		Client,
+
+		///<summary>
+		/// Менеджер
+		///</summary>
+		Manager,
+
+		///<summary>
+		/// Админ
+		///</summary>
+		Admin,
+	}
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

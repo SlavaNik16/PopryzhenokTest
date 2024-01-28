@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopryzhenokTest", "PopryzhenokTest\PopryzhenokTest.csproj", "{01C9FD25-BFAB-4899-9F97-84CD6DE751D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopryzhenokTest.Context", "PopryzhenokTest.Contexty\PopryzhenokTest.Context.csproj", "{565A8535-51D0-46DD-AFB7-095E134C4C6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01C9FD25-BFAB-4899-9F97-84CD6DE751D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C9FD25-BFAB-4899-9F97-84CD6DE751D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C9FD25-BFAB-4899-9F97-84CD6DE751D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C9FD25-BFAB-4899-9F97-84CD6DE751D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565A8535-51D0-46DD-AFB7-095E134C4C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565A8535-51D0-46DD-AFB7-095E134C4C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565A8535-51D0-46DD-AFB7-095E134C4C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565A8535-51D0-46DD-AFB7-095E134C4C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9F869E7-D403-42EF-84BF-78403FAFCC1C}
+	EndGlobalSection
+EndGlobal
