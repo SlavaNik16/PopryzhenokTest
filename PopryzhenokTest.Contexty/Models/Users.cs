@@ -2,7 +2,7 @@
 {
     public class User
 	{
-
+		
 		///<summary>
 		/// Идентификатор
 		///</summary>
